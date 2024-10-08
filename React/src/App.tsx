@@ -1,24 +1,17 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import toast from "react-hot-toast";
-import ValidationForm from "./components/ValidationForm";
-import { Plus } from "lucide-react";
 import TodoList from "./components/TodoList";
-import CreateTodoList from "./components/CreateTodoList";
+import ValidationForm from "./components/ValidationForm";
 
 function App() {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex items-center justify-center h-screen">
       <Tabs defaultValue="todo" className="w-[400px]">
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="todo">Todo List</TabsTrigger>
